@@ -1,0 +1,165 @@
+.sunrice-sunset-container {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.sunrice {
+    max-width: 240px;
+    max-height: 65px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &-sunset-wrapper {
+        padding: 10px 12px;
+    }
+
+    &-items {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: -30px;
+    }
+
+    &-about {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-title {
+        h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 171%;
+            letter-spacing: 0.01em;
+            color: #393939;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 171%;
+            letter-spacing: 0.01em;
+            color: #828282;
+        }
+    }
+
+    &-time {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 17px;
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 200%;
+            letter-spacing: 0.01em;
+            color: #828282;
+        }
+    }
+}
+
+.sunset {
+    max-width: 240px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &-sunset-wrapper {
+        padding: 10px 12px;
+    }
+
+    &-items {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: -30px;
+    }
+
+    &-about {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-title {
+        h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 171%;
+            letter-spacing: 0.01em;
+            color: #393939;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 171%;
+            color: #828282;
+        }
+    }
+
+    &-time {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 17px;
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 200%;
+            color: #828282;
+        }
+    }
+}
+
+@media (max-width:472px) {
+    .sunset-time {
+        p {
+            font-size: 10px;
+            color: #828282;
+            margin-bottom: 25px;
+        }
+    }
+    .sunset-title{
+        p{
+            font-size:12px;
+        }
+        h4{
+            font-size: 14px;
+        }
+    }
+    .sunrice-title{
+         p{
+            font-size: 12px;
+         }
+         h4{
+            font-size: 14px;
+         }
+    }
+    .sunrice-time {
+        p {
+            font-size: 10px;
+            color: #828282;
+            margin-bottom: 20px;
+        }
+    }
+    .sunrice-img{
+        img{
+            width:17px;
+            height: 17px;
+        }
+    }
+    .sunset-img{
+        img{
+            width:17px;
+            height: 17px;
+        }
+    }
+}

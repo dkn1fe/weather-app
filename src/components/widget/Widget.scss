@@ -1,0 +1,113 @@
+.widget {
+    max-width: 500px;
+    height: 350px;
+    background: url('../../assets/widget/backgroundWidget.png');
+    position: relative;
+
+    &-container {
+        padding: 25px;
+    }
+
+    &-name-country {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        color: #fff;
+    }
+
+    &-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        h3{
+            padding-top:20px;
+        }
+    }
+
+    &-weather {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-wrapper {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.temperature {
+    font-size: 60px;
+}
+
+.real-temperarute {
+    margin-top: -50px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    color: #fff;
+}
+
+.weather-name {
+    font-size: 18px;
+}
+
+.widget-time {
+    span {
+        color: rgb(184, 181, 181);
+    }
+}
+
+
+@media (max-width:472px) {
+    .widget {
+        max-width: 420px;
+    }
+
+    .widget-name-country {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .temperature {
+        font-size: 48px;
+    }
+
+    .real-temperarute {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.01em;
+        color: #fff;
+    }
+
+    .weather-name {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #fff;
+    }
+
+    .widget-date {
+        h3 {
+            margin-top:40px;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+}

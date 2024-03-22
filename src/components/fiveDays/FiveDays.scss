@@ -1,0 +1,36 @@
+.date {
+    display: flex;
+    gap: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.01em;
+    color: #000;
+    span:nth-child(1){
+        font-size: 18px;
+    }
+}
+.time-weather{
+    display: flex;
+     gap:300px;
+    align-items: center;
+}
+.weather-five-days {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.01em;
+    color: #828282;
+}
+
+@media (max-width:472px){
+    .temp-five-days{
+         margin-left:-50px;
+    }
+    .css-i4bv87-MuiSvgIcon-root{
+        margin-left: -30px;
+        margin-top:-40px;
+    }
+}

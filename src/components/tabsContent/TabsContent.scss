@@ -1,0 +1,14 @@
+.MuiTabs-flexContainer{
+    max-width: 500px;
+    justify-content: space-between;
+}
+
+@media (max-width:472px){
+     .MuiTabs-flexContainer{
+        max-width: 500px;
+        justify-content: space-between;
+        button{
+            padding:10px 15px !important;
+        }
+    }
+}
