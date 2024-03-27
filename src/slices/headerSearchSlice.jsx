@@ -15,7 +15,7 @@ const initialState = {
 export const fetchDataWeather = createAsyncThunk(
     'search/fetchDataWeather',
     async (textInput) => {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=020bb90fc56f48a097a100926241703&q=${textInput}&aqi=yes`)
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=020bb90fc56f48a097a100926241703&q=${textInput}&aqi=yes`)
         return response.json()
     }
 )
@@ -23,14 +23,14 @@ export const fetchDataWeather = createAsyncThunk(
 export const fetchDataForecast = createAsyncThunk(
     'search/fetchForecastData',
     async (textInput) => {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=020bb90fc56f48a097a100926241703&q=${textInput}&days=5&aqi=yes&alerts=no`)
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=020bb90fc56f48a097a100926241703&q=${textInput}&days=5&aqi=yes&alerts=no`)
         return response.json()
     }
 )
 export const fetchDataForecastToday = createAsyncThunk(
     'search/fetchForecastDataToday',
     async (textInput) => {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=020bb90fc56f48a097a100926241703&q=${textInput}&days=1&aqi=yes&alerts=no`)
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=020bb90fc56f48a097a100926241703&q=${textInput}&days=1&aqi=yes&alerts=no`)
         return response.json()
     }
 )
@@ -38,7 +38,7 @@ export const fetchDataForecastToday = createAsyncThunk(
 export const fetchDataCitiesValues = createAsyncThunk(
     'search/fetchDataCitiesValues',
     async(textInput) => {
-         const response = await fetch(`http://api.weatherapi.com/v1/search.json?key=020bb90fc56f48a097a100926241703&q=${textInput}`)
+         const response = await fetch(`https://api.weatherapi.com/v1/search.json?key=020bb90fc56f48a097a100926241703&q=${textInput}`)
          return response.json()
     }
 )
